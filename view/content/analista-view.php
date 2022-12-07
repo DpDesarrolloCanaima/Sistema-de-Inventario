@@ -57,7 +57,7 @@
                                             Options
                                         </button>
                                     <div class="dropdown-menu">
-                                        <a class="dropdown-item btn btn-warning" href="#"><img src="<?php SERVERURL; ?>view/img/svg/editar.svg " alt="Industrias Canaima" width="15" height="15"> Editar</a>
+                                        <a class="dropdown-item btn btn-warning" data-toggle="modal" data-target="#ModalEditar" href="#"><img src="<?php SERVERURL; ?>view/img/svg/editar.svg " alt="Industrias Canaima" width="15" height="15"> Editar</a>
                                         <a class="dropdown-item btn btn-danger" href="#"><img src="<?php SERVERURL; ?>view/img/svg/eliminar.svg " alt="Industrias Canaima" width="15" height="15"> Eliminar</a>
                                     </div>
                                     </div>
@@ -84,7 +84,7 @@
                                             Options
                                         </button>
                                     <div class="dropdown-menu">
-                                        <a class="dropdown-item btn btn-warning" href="#"><img src="<?php SERVERURL; ?>view/img/svg/editar.svg " alt="Industrias Canaima" width="15" height="15"> Editar</a>
+                                    <a class="dropdown-item btn btn-warning" data-toggle="modal" data-target="#ModalEditar" href="#"><img src="<?php SERVERURL; ?>view/img/svg/editar.svg " alt="Industrias Canaima" width="15" height="15"> Editar</a>
                                         <a class="dropdown-item btn btn-danger" href="#"><img src="<?php SERVERURL; ?>view/img/svg/eliminar.svg " alt="Industrias Canaima" width="15" height="15"> Eliminar</a>
                                     </div>
                                     </div>
@@ -394,4 +394,133 @@
          </div>
      </div>
  </div>
+ <!-- Modal editar -->
+<div class="modal fade" id="ModalEditar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Editar Registro</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+                     <form name="dispositivo" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="POST" class="">
+                         <div class="form-group">
+                             <label for="tipoDeDispositivo">tipo De Dispositivo</label>
+                             <select name="tipoDispositivo" id="" class="form-control form-control-lg">
+                                 <option value="1">Table 1</option>
+                                 <option value="2">Table 2</option>
+                                 <option value="3">Canaima 1</option>
+                                 <option value="4">Canaima 2</option>
+                                 <option value="5">Canaima 3</option>
+                                 <option value="6">Canaima 4</option>
+                                 <option value="7">Canaima 5</option>
+                                 <option value="8">Canaima Docente</option>
+                             </select>
+                         </div>
+                         <div class="form-group">
+                             <label for="exampleInputUser1">Serial del Equipo</label>
+                             <input type="text" class="form-control" id="exampleInputUser1" aria-describedby="nameHelp" name="serialEntrada">
+                         </div>
+                         <div class="form-group">
+                             <label for="exampleInputPassword1">Serail del Cargador</label>
+                             <input type="text" class="form-control" id="exampleInputCedula1" name="serialCargadorE">
+                         </div>
+                         <div class="form-group">
+                             <label for="exampleInputEmail1">Pertenecnia del Equipo</label>
+                             <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="pertenencia">
+                         </div>
+                         <div class="form-group">
+                             <label for="exampleInputEmail1">Insitución Educativa</label>
+                             <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="institucionEdu">
+                         </div>
+                         <div class="form-group">
+                             <label for="Estado">Grado O Año (Entrega)</label>
+                             <select name="gradoYears" id="" class="form-control form-control-lg">
+                                 <option value="1">1° Grado</option>
+                                 <option value="2">2° Grado</option>
+                                 <option value="3">3° Grado</option>
+                                 <option value="4">4° Grado</option>
+                                 <option value="5">5° Grado</option>
+                                 <option value="6">6° Grado</option>
+                                 <option value="7">1° Año</option>
+                                 <option value="8">2° Año</option>
+                                 <option value="9">3° Año</option>
+                                 <option value="10">4° Año</option>
+                                 <option value="11">5° Año</option>
+                             </select>
+                         </div>
+                         <div class="form-group">
+                             <label for="exampleInputEmail1">Institución Donde Estudia</label>
+                             <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="instituciónEstu">
+                         </div>
+                         <div class="form-group">
+                             <label for="Estado">Grado O Año (Actual)</label>
+                             <select name="gradoYears" id="" class="form-control form-control-lg">
+                                 <option value="1">1° Grado</option>
+                                 <option value="2">2° Grado</option>
+                                 <option value="3">3° Grado</option>
+                                 <option value="4">4° Grado</option>
+                                 <option value="5">5° Grado</option>
+                                 <option value="6">6° Grado</option>
+                                 <option value="7">1° Año</option>
+                                 <option value="8">2° Año</option>
+                                 <option value="9">3° Año</option>
+                                 <option value="10">4° Año</option>
+                                 <option value="11">5° Año</option>
+                                 <option value="12">Egresado</option>
+                             </select>
+                         </div>
+                         <div class="form-group">
+                             <label for="Estado">Estado</label>
+                             <select name="Estado" id="" class="form-control form-control-lg">
+                                 <option value="1">Excelente</option>
+                                 <option value="2">Bueno</option>
+                                 <option value="3">Regular</option>
+                                 <option value="4">Malo</option>
+                                 <option value="5">Muy Malo</option>
+                             </select>
+                         </div>
+                         <div class="form-group">
+                             <label for="exampleInputEmail1">Motivo</label>
+                             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="motivo"></textarea>
+                         </div>
+                         <div class="form-group">
+                             <label for="exampleInputEmail1">Fecha De Entrega</label>
+                             <input type="date" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="fechaDeEntrega">
+                         </div>
+                         <br>
+                         <div class="form-group">
+                             <label for="exampleFormControlTextarea1">Obervaciones</label>
+                             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="obervaciones"></textarea>
+                         </div>
+                         <hr>
+                         <label for="exampleInputEmail1">Equipo Reincidio</label>
+                         <div class="form-check">
+                             <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                             <label class="form-check-label" for="exampleRadios1">
+                                 Si
+                             </label>
+                         </div>
+                         <div class="form-check">
+                             <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                             <label class="form-check-label" for="exampleRadios2">
+                                 No
+                             </label>
+                         </div>
+                         <!-- <hr> -->
+                         <br>
+                         <div class="form-group">
+                             <label for="exampleFormControlTextarea1">Motivo de la Reincidencia</label>
+                             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                         </div>
+                         <hr>
+                         <button type="submit" class="btn btn-success">Enviar</button>
+                         <button type="reset" class="btn btn-danger">Refrescar</button>
+                     </form>
+                 </div>
+    </div>
+  </div>
+</div>
  <!-- /.container-fluid -->

@@ -116,7 +116,7 @@
                                             Options
                                         </button>
                                     <div class="dropdown-menu">
-                                        <a class="dropdown-item btn btn-warning" href="#"><img src="<?php SERVERURL; ?>view/img/svg/editar.svg " alt="Industrias Canaima" width="15" height="15"> Editar</a>
+                                        <a class="dropdown-item btn btn-warning" data-toggle="modal" data-target="#ModalEditar" href="#"><img src="<?php SERVERURL; ?>view/img/svg/editar.svg " alt="Industrias Canaima" width="15" height="15"> Editar</a>
                                         <a class="dropdown-item btn btn-danger" href="#"><img src="<?php SERVERURL; ?>view/img/svg/eliminar.svg " alt="Industrias Canaima" width="15" height="15"> Eliminar</a>
                                     </div>
                                     </div>
@@ -135,7 +135,7 @@
                                             Options
                                         </button>
                                     <div class="dropdown-menu">
-                                        <a class="dropdown-item btn btn-warning" href="#"><img src="<?php SERVERURL; ?>view/img/svg/editar.svg " alt="Industrias Canaima" width="15" height="15"> Editar</a>
+                                    <a class="dropdown-item btn btn-warning" data-toggle="modal" data-target="#ModalEditar" href="#"><img src="<?php SERVERURL; ?>view/img/svg/editar.svg " alt="Industrias Canaima" width="15" height="15"> Editar</a>
                                         <a class="dropdown-item btn btn-danger" href="#"><img src="<?php SERVERURL; ?>view/img/svg/eliminar.svg " alt="Industrias Canaima" width="15" height="15"> Eliminar</a>
                                     </div>
                                     </div>
@@ -146,7 +146,61 @@
                 </div>
             </div>
         </div>
+        <!-- Modal de Registro de Usuario -->
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-titlen text-dark mx-auto" id="exampleModalLabel">Registrar Usuario</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form name="crearusuario" action="" method="POST" class="FormularioAjax" autocomplete="off" data-form="save">
+                            <div class="form-group">
+                                <label for="exampleInputUser1">Nombre</label>
+                                <input type="text" class="form-control" id="exampleInputUser1" aria-describedby="nameHelp" name="nombre" pattern="{A-Za-z}">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputUser1">Apellido</label>
+                                <input type="text" class="form-control" id="exampleInputUser1" aria-describedby="nameHelp" name="apellido" pattern="{A-Za-z}">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Contraseña</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1" name="password" pattern="{A-Za-z1-9}">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Cédula</label>
+                                <input type="text" class="form-control" id="exampleInputCedula1" name="cedula" pattern="{1-9}">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Correo</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="correo" pattern="{A-Za-z@}">
+                            </div>
+                            <div class="form-group">
+                                <label for="perfil">Perfil</label>
+                                <select name="perfil" id="" class="form-control form-control-lg">
+                                    <option value="1">Administrador</option>
+                                    <option value="2">Presidencia</option>
+                                    <option value="3">Director de Area</option>
+                                    <option value="4">Gerente</option>
+                                    <option value="5">Supervisor de Linea</option>
+                                    <option value="6">Analista</option>
+                                    <option value="7">Técnico</option>
+                                    <option value="8">Verificador</option>
+                                </select>
+                            </div>
+                            <hr>
+                            <button type="submit" class="btn btn-success">Enviar</button>
+                            <button type="reset" class="btn btn-danger">Refrescar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal de editar información del usuario -->
+        <div class="modal fade" id="ModalEditar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
