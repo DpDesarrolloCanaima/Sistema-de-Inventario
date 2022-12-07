@@ -36,23 +36,60 @@
                          </tr>
                      </thead>
                      <tbody>
-                         <tr>
-                             <td>Tiger Nixon</td>
-                             <td>System Architect</td>
-                             <td>Edinburgh</td>
-                             <td>61</td>
-                             <td>2011/04/25</td>
-                             <td>$320,800</td>
-                             <td>asd</td>
-                             <td>asd</td>
-                             <td>sda</td>
-                             <td>asds</td>
-                             <td>asd</td>
-                             <td>ads</td>
-                             <td>asd</td>
-                             <td>das</td>
-                             <td><a class="btn btn-warning" href="#" role="button"><img src="<?php SERVERURL; ?>view/img/svg/editar.svg " alt="Industrias Canaima" width="15" height="15"> Editar</a></td>
-                         </tr>
+                     <tr>
+                                <td>Tiger Nixon</td>
+                                <td>System Architect</td>
+                                <td>Edinburgh</td>
+                                <td>61</td>
+                                <td>2011/04/25</td>
+                                <td>$320,800</td>
+                                <td>asd</td>
+                                <td>asdas</td>
+                                <td>asd</td>
+                                <td>addslashes</td>
+                                <td>asada</td>
+                                <td>asdas</td>
+                                <td>asda</td>
+                                <td>asdsa</td>
+                                <td>
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                            Options
+                                        </button>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item btn btn-warning" href="#"><img src="<?php SERVERURL; ?>view/img/svg/editar.svg " alt="Industrias Canaima" width="15" height="15"> Editar</a>
+                                        <a class="dropdown-item btn btn-danger" href="#"><img src="<?php SERVERURL; ?>view/img/svg/eliminar.svg " alt="Industrias Canaima" width="15" height="15"> Eliminar</a>
+                                    </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Garrett Winters</td>
+                                <td>Accountant</td>
+                                <td>Tokyo</td>
+                                <td>63</td>
+                                <td>2011/07/25</td>
+                                <td>$170,750</td>
+                                <td>asd</td>
+                                <td>asdas</td>
+                                <td>asd</td>
+                                <td>addslashes</td>
+                                <td>asada</td>
+                                <td>asdas</td>
+                                <td>asda</td>
+                                <td>asdsa</td>
+                                <td>
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                            Options
+                                        </button>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item btn btn-warning" href="#"><img src="<?php SERVERURL; ?>view/img/svg/editar.svg " alt="Industrias Canaima" width="15" height="15"> Editar</a>
+                                        <a class="dropdown-item btn btn-danger" href="#"><img src="<?php SERVERURL; ?>view/img/svg/eliminar.svg " alt="Industrias Canaima" width="15" height="15"> Eliminar</a>
+                                    </div>
+                                    </div>
+                                </td>
+                            </tr>
                          
                      </tbody>
                  </table>
@@ -111,7 +148,17 @@
                              <td>asd</td>
                              <td>addslashes</td>
                              <td>addslashes</td>
-                             <td><a class="btn btn-warning" href="#" role="button"><img src="<?php SERVERURL; ?>view/img/svg/editar.svg " alt="Industrias Canaima" width="15" height="15"> Editar</a></td>
+                             <td>
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                            Options
+                                        </button>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item btn btn-warning" href="#"><img src="<?php SERVERURL; ?>view/img/svg/editar.svg " alt="Industrias Canaima" width="15" height="15"> Editar</a>
+                                        <a class="dropdown-item btn btn-danger" href="#"><img src="<?php SERVERURL; ?>view/img/svg/eliminar.svg " alt="Industrias Canaima" width="15" height="15"> Eliminar</a>
+                                    </div>
+                                    </div>
+                                </td>
                          </tr>
                          
                      </tbody>

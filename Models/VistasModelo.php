@@ -5,7 +5,7 @@ class VistasModelo
     // obtener las vistas
     protected static function obtener_vistas_modelo($vistas)
     {
-        $listaBlanca = ["home", "analista","tecnico"];
+        $listaBlanca = ["home", "analista","tecnico", "presidencia"];
         if (in_array($vistas, $listaBlanca)) {
             if (is_file("./view/content/" . $vistas . "-view.php")) {
                 $contenido = "./view/content/" . $vistas . "-view.php";
