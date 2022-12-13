@@ -1,6 +1,6 @@
 <div class="signupFrm">
     <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="POST" class="form">
-        <h1 class="title">Iniciar Session</h1>
+        <h1 class="title">Iniciar Sesión</h1>
 
         <div class="inputContainer">
             <input type="text" name="usuario" id="inputEmail" class="input" placeholder="a">
